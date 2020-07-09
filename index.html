@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV JSON 2 Way Converter</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="input">
+        <label for="CSVTextArea" class="input__label">CSV Data:</label>
+        <textarea name="CSVTextArea" id="CSVTextArea" cols="60" rows="35"
+            class="input__textarea"> Enter data here </textarea>
+        <span class="input__error--csv"></span>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn" id="CSVtoJSONBtn">Convert CSV to JSON &#8594;</button>
+        <button class="btn" id="JSONtoCSVBtn">&#8592; Convert JSON to CSV</button>
+
+    </div>
+    <div class="input">
+        <label for="JSONTextArea" class="input__label">JSON Data:</label>
+        <textarea name="JSONTextArea" id="JSONTextArea" cols="60" rows="35"
+            class="input__textarea"> Enter data here </textarea>
+        <span class="input__error--json"></span>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
