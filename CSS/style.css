@@ -15,8 +15,22 @@ body {
 
   background-size: cover;
   color: whitesmoke;
-  display: flex;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
@@ -30,21 +44,42 @@ body {
 
 .btn {
   margin: 1rem;
-  padding: 2rem 5rem;
+  padding: 1.5rem 3rem;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  transition: all 1s ease-in-out;
+}
+
+.btn:focus,
+.btn:active {
+  transform: scale(1.02);
+  outline: none;
+  box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 .input__label {
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 .input__textarea {
   padding: 1rem;
   border-radius: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+.input__textarea:focus {
+  transform: scale(1.02);
+
+  outline: none;
+  box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 .btn-container {
   display: flex;
   flex-direction: column;
+}
+
+.input__error--csv,
+.input__error--json {
+  color: orangered;
 }

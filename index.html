@@ -9,23 +9,26 @@
 </head>
 
 <body>
-    <div class="input">
-        <label for="CSVTextArea" class="input__label">CSV Data:</label>
-        <textarea name="CSVTextArea" id="CSVTextArea" cols="60" rows="35"
-            class="input__textarea"> Enter data here </textarea>
-        <span class="input__error--csv"></span>
-    </div>
+    <h1 class="h1">CSV JSON Converter</h1>
+    <div class="container">
+        <div class="input">
+            <label for="CSVTextArea" class="input__label">CSV Data:</label>
+            <textarea name="CSVTextArea" id="CSVTextArea" cols="50" rows="30"
+                class="input__textarea"> Enter data here </textarea>
+            <span class="input__error--csv"></span>
+        </div>
 
-    <div class="btn-container">
-        <button class="btn" id="CSVtoJSONBtn">Convert CSV to JSON &#8594;</button>
-        <button class="btn" id="JSONtoCSVBtn">&#8592; Convert JSON to CSV</button>
+        <div class="btn-container">
+            <button class="btn" id="CSVtoJSONBtn">Convert CSV to JSON &#8594;</button>
+            <button class="btn" id="JSONtoCSVBtn">&#8592; Convert JSON to CSV</button>
 
-    </div>
-    <div class="input">
-        <label for="JSONTextArea" class="input__label">JSON Data:</label>
-        <textarea name="JSONTextArea" id="JSONTextArea" cols="60" rows="35"
-            class="input__textarea"> Enter data here </textarea>
-        <span class="input__error--json"></span>
+        </div>
+        <div class="input">
+            <label for="JSONTextArea" class="input__label">JSON Data:</label>
+            <textarea name="JSONTextArea" id="JSONTextArea" cols="50" rows="30"
+                class="input__textarea"> Enter data here </textarea>
+            <span class="input__error--json"></span>
+        </div>
     </div>
 
     <script src="./scripts/main.js"></script>
