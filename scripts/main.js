@@ -160,7 +160,7 @@ CSVDataEl.innerHTML = `PHONE,COUNTRY_CODE
 
 JSONDataEl.innerHTML = `[
     {
-        "A": "Mrs. ,Diana Clark",
+        "A": "Mrs. Diana Clark",
         "B": "71-0248690",
         "C": "Smith",
         "D": "Troy Benson",
