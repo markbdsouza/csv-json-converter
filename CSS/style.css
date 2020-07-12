@@ -42,6 +42,7 @@ body {
 .input {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .btn {
@@ -52,6 +53,7 @@ body {
   transition: all 1s ease-in-out;
   background-image: linear-gradient(to bottom right, #1e272e, #485460);
   color: #d2dae2;
+  z-index: 10;
 }
 
 .btn:focus,
@@ -69,6 +71,10 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   transition: all 1s ease-in-out;
+
+  animation: moveInTop 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 .input__textarea:focus {
@@ -81,6 +87,8 @@ body {
 .btn-container {
   display: flex;
   flex-direction: column;
+  animation: moveInBottom 1s;
+  animation-timing-function: ease-out;
 }
 
 .input__error--csv,
@@ -88,4 +96,48 @@ body {
   margin-top: 1rem;
   padding-left: 1rem;
   color: #ff3f34;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem) scale(0.1);
+  }
+  50% {
+    transform: translateY(3rem) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem) scale(0.3);
+  }
+  50% {
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Here is the animation (keyframes) */
+@keyframes animateRightAndBack {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
